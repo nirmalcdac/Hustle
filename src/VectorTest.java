@@ -1,6 +1,8 @@
-public class Vector {
+import java.util.Vector;
+
+public class VectorTest {
     public static void main(String[] args) {
-        java.util.Vector<Integer> v = new java.util.Vector<>();
+        Vector<Integer> v = new Vector<>();
         v.add(1);
         System.out.println("Size just after one element " + v.size());
         System.out.println("capacity just after adding  one element " + v.capacity());
