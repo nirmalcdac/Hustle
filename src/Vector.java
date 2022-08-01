@@ -10,8 +10,15 @@ public class Vector {
         for (Integer integer : v) {
             System.out.println(integer);
         }
-
         System.out.println("Size after all elements " + v.size());
         System.out.println("capacity after adding all element " + v.capacity());
+        if (v.contains(4)) {
+            System.out.println("i have 4");
+        } else {
+            System.out.println("I don't have 5");
+        }
+        System.out.println(v.lastElement());
+        System.out.println(v.firstElement());
+        System.out.println(v.elementAt(3));
     }
 }
