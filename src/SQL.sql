@@ -1,0 +1,1 @@
+select department, max(salary) as highest_salary from employee group by department
