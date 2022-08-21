@@ -2,7 +2,7 @@ public class SquareArray {
     public static void main(String[] args) {
 //        int[] intArray = new int[]{1};
 //        int[] intArray = new int[]{-4,-1,0,3,10};
-        int[] intArray = new int[]{-7,-3,2,3,11};
+        int[] intArray = new int[]{-7, -3, 2, 3, 11};
         sortArray(intArray);
     }
 
