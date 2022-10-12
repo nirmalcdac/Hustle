@@ -2,7 +2,9 @@ package Interview;
 
 public class TestMap {
     public static void main(String[] args) {
-        String str = "aba";
+        String str = "abc";
+        // (abc) a, ab, abc, b, bc, c
+        // (aba) a, ab, aba, b, ba, a
         System.out.println(solution(str));
     }
 
