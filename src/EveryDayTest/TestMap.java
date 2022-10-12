@@ -1,4 +1,4 @@
-package Interview;
+package EveryDayTest;
 
 public class TestMap {
     public static void main(String[] args) {

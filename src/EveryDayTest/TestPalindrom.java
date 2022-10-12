@@ -1,4 +1,4 @@
-package Interview;
+package EveryDayTest;
 
 public class TestPalindrom {
     public static void main(String[] args) {
