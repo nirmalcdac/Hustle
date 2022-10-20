@@ -12,7 +12,7 @@ public class TestArrayOperation {
         list.add(5);
         list.add(6);
         System.out.println(list.stream().filter(i -> i % 2 == 0).collect(Collectors.toList()));
-        int[] array = {9, 6, 3, 4, 10, 2, 7, 8, 1, 5};
+        int[] array = {9, 6, 3, 4, 10, 11, 7, 8, 1, 5};
         int sum = 0;
         for (int i = 0; i <= 11; i++) {
             sum = sum + i;
