@@ -1,4 +1,4 @@
-package Interview;
+package Todo;
 
 /* You are given a strings, which contains stars*.
 In one operation, you can:

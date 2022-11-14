@@ -1,4 +1,4 @@
-package Interview;
+package Todo;
 /*The first occurrence of a character in the given sequence indicates the customer arrival,
 and the second occurrence of a character indicates the departure for a customer.
 A customer cannot be serviced when the cafe capacity is full.
