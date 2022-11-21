@@ -1,0 +1,22 @@
+/*final class Student{
+	private  final string  name;
+	private  final String  TeacherName;
+	private  final List<String> cources;
+}
+
+List<Student> list = new ArrayList();
+
+list.stream.filter(i-> i.getTeacherName = "Deepti").colection. tolist;
+
+
+List integer
+
+2, 5, 7,
+
+list.stream(u-> u*u).collectionToList();
+
+
+String str =
+
+
+* */
