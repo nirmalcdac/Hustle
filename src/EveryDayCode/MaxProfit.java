@@ -3,8 +3,7 @@ package EveryDayCode;
 public class MaxProfit {
     public static void main(String[] args) {
 //        int[] intArray = new int[]{7, 1, 5, 3, 6, 4};
-        int [] intArray  = new int[]{7,6,4,3,1};
-
+        int[] intArray = new int[]{7, 6, 4, 3, 1};
         System.out.println(generateProfit(intArray));
     }
 
