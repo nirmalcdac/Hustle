@@ -20,3 +20,365 @@ String str =
 
 
 * */
+
+
+
+String s = "My name is Nirmal";
+
+
+M= 3
+y = 1
+
+Hash
+
+M 3
+y
+n 2
+
+Map <String, Integer>  map = newHAshMap()<>
+
+for(int i=0;i<str.length;i++){
+	if(map.contain(str.charAt[i])){
+		map.put(str.charAt[i],map.get(str.chatAt[i])+1)
+	}else{
+		map.put(str.charAt[i], 1)
+	}
+}
+
+
+map.put(null, "nimral");
+map.put(new Employee("nirmal", "345"), "Mayank");
+//map.put(new Employee("nirmal", "3467"), "Mayank");
+
+
+Employee{
+	String name;
+	String id;
+}
+Employee(String name, Stirng id){
+	this.name = name;
+	this.id = id;
+}
+
+Option.ofNullable()
+
+
+orElseThrow()
+
+Stream
+
+
+
+Interface I1
+
+
+coid show();
+
+
+class a Implements I1{
+	@Override
+	show(){
+	sountA
+	}
+}
+
+Class B implements I1
+
+@Override
+	show(){
+	sountB
+	}
+
+
+No unique bean found
+
+@Qualifier
+@primary
+
+
+
+
+
+https://blueyonder.zoom.us/j/96741969974?pwd=MmhQSkpuUmM5dzJlT2NoZDRMaDF4QT09&from=addon#success
+
+
+generation
+clicking
+
+
+Recomondation
+
+
+
+user => many
+
+getProductoctId()
+
+procut => many user
+
+url,
+
+production => 1, 2
+
+
+Urltable
+
+pk, tinyurl,
+bit.ly/78783939j
+
+
+
+controler
+redirection
+bit.ly/get/78783939
+
+BL
+service
+
+
+
+
+
+
+rediection
+78783939, landing page url(promotionid)
+78783938, landing page url(promotionid) /abc/abc.com/p1234
+
+
+
+redish
+78783939, /abc/abc.com/p1234
+
+
+userpromotionmapping
+promotionid, {set of users}, validity, disc
+p1234, {user1, user2}, 30
+
+
+ProductRecomandationtable
+promotionid, {set of products(prodocutIds)}
+p1234, {prod1, prod2}
+
+
+cron
+
+discount
+uuid, 10,
+uuid, 10,
+
+
+
+
+landing page, dics=ount
+
+
+
+
+List 1000 customer bank bal
+add 10% interest
+
+
+
+Executer, 10tread
+
+
+List.stream.fioreach(j-> addinterest(j))
+
+
+
+addinterest(){
+	Exucur10
+}
+
+
+Select city
+Select Movie
+theater  timings date
+
+
+=> seat selection
+Payment
+Booking service
+Ticket details to be sent to customer
+
+
+city
+city_id, city_name, lat_long
+
+
+ip_table/ lat Long
+ip_id, ip_data
+1, {ip1,ip2,ip3,ip4}
+
+movie
+movie_id, name, starting_date, end_date
+
+=> upcoming, now Showing
+
+city-movie_mapping
+city_id, movie_id
+
+theather_city_mapping
+theather_id, theather_name, city, lat_long
+
+
+
+
+theather_movie_mapping
+theather_id, movie_id
+
+
+Showtimings
+time_id, time
+
+
+theeather show time mapping
+tstmapping_id, theather_id, time_id
+
+theather_movie_time_mapping/Schedule Table
+schedule_id, movie_id, tstmapping_id
+
+
+Seat_schedule_table
+seat_schedule_id, seat_id, status, customer_id, Date, schedule_id, status, status_update_time
+
+
+Customer
+c_id, cnmae, customer/Guest, name, email, push_notif_id
+
+Booking_status,
+seat_schudeid, seat_id
+
+
+
+Survey application
+
+crate a survey
+execute a surway
+15-20 cust ccame for opening
+
+likes of facebook
+surway covid vaccine
+
+
+
+
+
+create a surway  10,
+
+
+{
+	question1:
+
+}
+Give Surway feedback
+
+
+
+customer lastvisited
+
+15 days
+
+
+
+
+Application
+
+
+Service Input outoput
+
+https://Mysurver/Createsurway => suraw id(), Questions, Start enddate, Retry(1,15) => Emil id, mobile number, Name
+
+Surway id,
+
+1000,
+
+100
+
+Giveresponse, mobile , email
+
+SurwayResponseId, Sureway_id, Response
+								{q, radio, check text}
+
+
+
+
+
+analytics output for those analytics data
+
+
+
+Report Engine
+
+h2, like,
+
+Question  ====> yes
+		==> no
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+
+
+
+//ou have planned some train traveling one year in advance. The days of the year in which you will travel are given as an integer array days. Each day is an integer from 1 to 365.
+
+// Train tickets are sold in three different ways:
+
+// a 1-day pass is sold for costs[0] dollars,
+// a 7-day pass is sold for costs[1] dollars, and
+// a 30-day pass is sold for costs[2] dollars.
+// The passes allow that many days of consecutive travel.
+
+// For example, if we get a 7-day pass on day 2, then we can travel for 7 days: 2, 3, 4, 5, 6, 7, and 8.
+// Return the minimum number of dollars you need to travel every day in the given list of days.
+// Input: days = [1,4,6,7,8,20], costs = [2,7,15]
+// Output: 11
+
+// Input: days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,14]
+// Output: 16
+
+min_cost[i] = cost[i-1]+cost[0];//1day pass
+
+class Solution {
+
+    public int solution(String s) {
+        int [] days =. new int []{1,2,3,4,5,6,7,8,9,10,30,31};
+        int [] costs =. new int []{2,7,14};
+
+        int costing = 0;
+        int eachDayCost;
+        int
+        for(int i=0;i<days.length;i++){
+            if(days.length>=7){
+                for(int k=i;k<i+7;i++){
+
+                }
+            }
+        }
+        // write the solution here..
+
+        return 0;
+    }
+
+
+}
+
+class Main {
+
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        String line = myObj.nextLine();
+        int ans = new Solution().solution(line);
+        System.out.print(ans);
+    }
+}
+
+
