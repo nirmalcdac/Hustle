@@ -54,19 +54,19 @@ services:
       - ./redis-master/data:/data
     ports:
       - "6379:6379"
-  
+
   hustle-redis-replica:
-    container_name: hustle-redis-replica
-    image: redis:latest
-    hostname: "hustle-redis-replica"
-    command: redis-server --save 20 1 --loglevel warning
-    environment:
-      - REDIS_REPLICATION_MODE=slave
-      - REDIS_MASTER_HOST=hustle-redis-master
-      - REDIS_MASTER_PORT_NUMBER=6379
-      - REDIS_MASTER_PASSWORD=my_master_password
-      - REDIS_PASSWORD=my_replica_password
-    depends_on:
-      - hustle-redis-master
-    ports:
-      - "16379:6379"
+      container_name: hustle-redis-replica
+      image: redis:latest
+      hostname: "hustle-redis-replica"
+      command: redis-server --save 20 1 --loglevel warning
+      environment:
+        - REDIS_REPLICATION_MODE=slave
+        - REDIS_MASTER_HOST=hustle-redis-master
+        - REDIS_MASTER_PORT_NUMBER=6379
+        - REDIS_MASTER_PASSWORD=my_master_password
+        - REDIS_PASSWORD=my_replica_password
+      depends_on:
+        - hustle-redis-master
+      ports:
+        - "16379:6379"
