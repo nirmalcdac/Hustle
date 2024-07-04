@@ -1,6 +1,6 @@
 package GooglePreperation;
 
-public class LC3110ScoreOfaString {
+public class LC3110 {
     public static void main(String[] args) {
         System.out.println("i am coming Google");
         String string = "hello";
