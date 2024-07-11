@@ -21,7 +21,7 @@ public class LC3110Test {
     }
 
     @Test
-    public void testNegetiveCase() {
+    public void testNegativeCase() {
         Assert.assertNotEquals(LC3110.getScoreOfString("zaz"), 51);
     }
 }
