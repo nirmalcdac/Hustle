@@ -14,6 +14,7 @@ public class LC20Test {
         assertTrue(lc20.isValidOne("()"));
         assertTrue(lc20.isValidOne("()[]{}"));
         assertFalse(lc20.isValidOne("(]"));
+        assertTrue(lc20.isValidOne("([)]"));
     }
 
     @Test
@@ -21,6 +22,7 @@ public class LC20Test {
         assertTrue(lc20.isValidTwo("()"));
         assertTrue(lc20.isValidTwo("()[]{}"));
         assertFalse(lc20.isValidTwo("(]"));
+        assertTrue(lc20.isValidTwo("([)]"));
     }
 
     @Test
@@ -28,5 +30,20 @@ public class LC20Test {
         assertTrue(lc20.isValidThree("()"));
         assertTrue(lc20.isValidThree("()[]{}"));
         assertFalse(lc20.isValidThree("(]"));
+        assertTrue(lc20.isValidThree("([)]"));
+    }
+
+    @Test
+    public void testIsValidFinal() {
+        assertTrue(lc20.isValidFinal("()"));
+        assertTrue(lc20.isValidFinal("()[]{}"));
+        assertFalse(lc20.isValidFinal("(]"));
+        assertFalse(lc20.isValidFinal("([)]"));
+        assertFalse(lc20.isValidFinal("{"));
+        assertFalse(lc20.isValidFinal("["));
+        assertFalse(lc20.isValidFinal("("));
+        assertFalse(lc20.isValidFinal("))"));
+        assertFalse(lc20.isValidFinal("}}"));
+        assertFalse(lc20.isValidFinal("}}"));
     }
 }

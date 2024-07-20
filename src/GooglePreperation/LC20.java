@@ -1,9 +1,6 @@
 package GooglePreperation;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class LC20 {
     public static void main(String[] args) {
@@ -11,8 +8,7 @@ public class LC20 {
     }
 
     public boolean isValidOne(String s) {
-        Set<Character> hashSet = new HashSet<Character>();
-        Map<Character, Integer> hashMap = new HashMap<Character, Integer>();
+        Set<Character> hashSet = new HashSet<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '}') {
                 hashSet.remove('{');
@@ -28,7 +24,7 @@ public class LC20 {
     }
 
     public boolean isValidTwo(String s) {
-        Map<Character, Integer> hashMap = new HashMap<Character, Integer>();
+        Map<Character, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '}') {
                 hashMap.remove('{');
@@ -61,5 +57,32 @@ public class LC20 {
             }
         }
         return c == 'A';
+    }
+
+    public boolean isValidFinal(String s) {
+        Stack<Character> charStack = new Stack<>();
+        int count = 0;
+        boolean flag = !s.isEmpty() && s.length() != 1;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
+                charStack.push(s.charAt(i));
+                count++;
+            } else if (s.charAt(i) == '}' && !charStack.isEmpty() && charStack.peek() == '{') {
+                charStack.pop();
+                count--;
+            } else if (s.charAt(i) == ')' && !charStack.isEmpty() && charStack.peek() == '(') {
+                charStack.pop();
+                count--;
+            } else if (s.charAt(i) == ']' && !charStack.isEmpty() && charStack.peek() == '[') {
+                charStack.pop();
+                count--;
+            } else {
+                flag = false;
+            }
+        }
+        if (count > 0) {
+            flag = false;
+        }
+        return flag;
     }
 }
