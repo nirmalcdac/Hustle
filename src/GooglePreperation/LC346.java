@@ -17,7 +17,7 @@ public class LC346 {
             windowSize++;
         }
         int temp = 0;
-        int temp1 = 0;
+        int temp1;
         for (int i = arr.length - 1; i >= 0; i--) {
             if (i == 0) {
                 arr[i] = temp;
@@ -30,8 +30,8 @@ public class LC346 {
             temp = temp1;
         }
         double sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        for (int j : arr) {
+            sum = sum + j;
         }
         return sum / windowSize;
     }

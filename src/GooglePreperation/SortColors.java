@@ -12,9 +12,6 @@ public class SortColors {
         int e = n - 1;
         int i = 1;
         int temp;
-//        for (int j : arr) {
-//            System.out.println(j);
-//        }
         while (i <= e) {
             if (arr[i] == 0) {
                 temp = arr[i];
