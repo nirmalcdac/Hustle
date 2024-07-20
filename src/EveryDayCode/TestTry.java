@@ -2,9 +2,9 @@ package EveryDayCode;
 
 public class TestTry {
     public static void main(String[] args) {
-        try{
+        try {
             System.exit(0);
-        }finally {
+        } finally {
             System.out.println("finally");
         }
     }

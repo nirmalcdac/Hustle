@@ -27,6 +27,6 @@ public class TestMapAEIOU {
             }
         }
         System.out.println(map.get("e"));
-        map.forEach((key, value) -> System.out.println("" + key + "=" + value));
+        map.forEach((key, value) -> System.out.println(key + "=" + value));
     }
 }

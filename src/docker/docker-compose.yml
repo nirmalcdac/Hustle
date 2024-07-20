@@ -19,7 +19,7 @@ services:
     image: postgres:latest
     hostname: "dcspostgres"
     environment:
-      POSTGRES_DATABASE: hustle-postgresdb 
+      POSTGRES_DATABASE: hustle-postgresdb
       POSTGRES_HOST: dcspostgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -33,10 +33,10 @@ services:
     image: rabbitmq:management
     hostname: "rabbitmq"
     environment:
-        RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
-        RABBITMQ_DEFAULT_USER: "guest"
-        RABBITMQ_DEFAULT_PASS: "guest"
-        RABBITMQ_DEFAULT_VHOST: "/"
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "guest"
+      RABBITMQ_DEFAULT_PASS: "guest"
+      RABBITMQ_DEFAULT_VHOST: "/"
     ports:
       - "45672:5672"
       - "45673:15672"
@@ -56,17 +56,17 @@ services:
       - "6379:6379"
 
   hustle-redis-replica:
-      container_name: hustle-redis-replica
-      image: redis:latest
-      hostname: "hustle-redis-replica"
-      command: redis-server --save 20 1 --loglevel warning
-      environment:
-        - REDIS_REPLICATION_MODE=slave
-        - REDIS_MASTER_HOST=hustle-redis-master
-        - REDIS_MASTER_PORT_NUMBER=6379
-        - REDIS_MASTER_PASSWORD=my_master_password
-        - REDIS_PASSWORD=my_replica_password
-      depends_on:
-        - hustle-redis-master
-      ports:
-        - "16379:6379"
+    container_name: hustle-redis-replica
+    image: redis:latest
+    hostname: "hustle-redis-replica"
+    command: redis-server --save 20 1 --loglevel warning
+    environment:
+      - REDIS_REPLICATION_MODE=slave
+      - REDIS_MASTER_HOST=hustle-redis-master
+      - REDIS_MASTER_PORT_NUMBER=6379
+      - REDIS_MASTER_PASSWORD=my_master_password
+      - REDIS_PASSWORD=my_replica_password
+    depends_on:
+      - hustle-redis-master
+    ports:
+      - "16379:6379"
