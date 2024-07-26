@@ -9,6 +9,7 @@ public class SelectionSort {
                     min = j;
                 }
             }
+
             if (min != i) {
                 int temp = arr[i];
                 arr[i] = arr[min];
