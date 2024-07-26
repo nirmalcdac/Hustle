@@ -1,9 +1,9 @@
-package Todo;
+package EveryDayCode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ACache {
+public class CustomCache {
     int size = 100;
     Map<String, String> map = new HashMap<>();
 

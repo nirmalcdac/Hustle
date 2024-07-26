@@ -14,8 +14,8 @@ import java.util.Set;
 
 public class ServeCustomer {
     public static void main(String[] args) {
-//        String customerSequence = "ABCDDCEFFEBGAG";
-        String customerSequence = "ABCDECFDFEBGAG";
+        String customerSequence = "ABCDDCEFFEBGAG";
+//        String customerSequence = "ABCDECFDFEBGAG";
         Integer capacity = 3;
         Set<Object> set = new HashSet<>();
         attendCustomer(set, customerSequence, capacity);
