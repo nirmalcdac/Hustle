@@ -3,12 +3,15 @@ package EveryDayCode;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 public class ServiceTest {
     Service service = new Service();
+
     @Before
     public void init() {
         testServiceReg();
     }
+
     @Test
     public void testServiceReg() {
         this.service.serviceMap.clear();
@@ -25,6 +28,7 @@ public class ServiceTest {
         Assert.assertEquals(this.service.addEntry("Address10", "instance10"), "instance10");
         Assert.assertEquals(this.service.addEntry("Address11", "instance1"), "Can Not Add More entries");
     }
+
     @Test
     public void testGet() {
         Assert.assertNotEquals(this.service.get(), this.service.get());

@@ -23,32 +23,32 @@ class Customer {
     private String mobile_no;
     private String name;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getName() {
         return this.name;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
         return this.email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getMobile_no() {
         return this.mobile_no;
     }
 
-    public void setMobileNo(String mobile_no) {
-        this.mobile_no = mobile_no;
-    }
-
     public String getMobileNo() {
         return mobile_no;
+    }
+
+    public void setMobileNo(String mobile_no) {
+        this.mobile_no = mobile_no;
     }
 }
 

@@ -7,11 +7,11 @@ public class TestOverridingPrivateStatic extends TestSuperClass {
 //        coolPrivate("J");
     }
 
-    private void coolPrivate(String coolPrivate) {
-        System.out.println("coolPrivateChild");
-    }
-
     static void coolStatic(String coolStatic) {
         System.out.println("coolStaticChild");
+    }
+
+    private void coolPrivate(String coolPrivate) {
+        System.out.println("coolPrivateChild");
     }
 }

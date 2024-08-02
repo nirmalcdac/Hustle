@@ -10,9 +10,9 @@ public class Test {
     public static void main(String[] args) {
         int[] intArray = new int[]{5, 2, 6, 1, 3, 9}; //8
         int j;
-        for(int i=0;i<intArray.length;i++){
-            j = i+1;
-            if(intArray[j]>intArray[i]){
+        for (int i = 0; i < intArray.length; i++) {
+            j = i + 1;
+            if (intArray[j] > intArray[i]) {
                 i++;
             }
         }
