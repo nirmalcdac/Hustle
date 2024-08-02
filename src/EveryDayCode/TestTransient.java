@@ -4,7 +4,7 @@ import java.io.*;
 
 public class TestTransient implements Serializable {
     //Modifier 'transient' is redundant for a 'static' field
-    transient static int l = 40;
+    static int l = 40;
     int i = 10;
     int j = 20;
     transient int k = 30;

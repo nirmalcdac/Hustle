@@ -2,7 +2,7 @@ package EveryDayCode;
 
 import java.util.*;
 
-import static EveryDayCode.CustomSet.*;
+import static EveryDayCode.CustomSet.Node;
 
 public class CustomSetDriver {
     public static void main(String[] args) {

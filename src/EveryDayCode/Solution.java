@@ -2,8 +2,7 @@ package EveryDayCode;
 
 public class Solution {
     public static void main(String[] args) {
-//        int [] intArray = new int []{1,3,2,8,4,9};
-//        int fee = 2;
+//        int [] intArray = new int []{1,3,2,8,4,9}; int fee = 2;
         int[] intArray = new int[]{1, 3, 7, 5, 10, 3};
         int fee = 3;
 

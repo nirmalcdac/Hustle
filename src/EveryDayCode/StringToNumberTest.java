@@ -5,11 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class StringToNumberTest {
-    StringToNumber stringToNumber = new StringToNumber();
-
     @Before
     public void init() {
-        testStringToNumber();
     }
 
     @Test
